@@ -1,0 +1,17 @@
+Documentación de del código
+fue utilizado:
+-npm create vite@latest mi-app-vite -- --template react
+ -cd mi-app-vite
+ -npm install
+ -npm run dev
+
+se le instalo boostrap icons:npm i bootstrap-icons 
+
+Bootstrap:npm i bootstrap@5.3.3
+
+la uuid4:npm install uuid4 para la generacion de id aleatorio
+
+
+Si agrega mas de 4 contactos, se implementara la paginación.
+
+

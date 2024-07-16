@@ -1,0 +1,142 @@
+ /*fue sacado de  https://alvarotrigo.com/blog/animated-backgrounds-css/ (10) Blob Background Animation)*/
+body {
+  height: 100vh;
+   background: linear-gradient(90deg,#e52e71,#ff8a00);
+
+}
+
+.slider-thumb::before {
+  position: absolute;
+  content: "";
+  left: 30%;
+  top: 20%;
+  width: 450px;
+  height: 450px;
+  background: #17141d;
+  border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+  will-change: border-radius, transform, opacity;
+  animation: sliderShape 5s linear infinite;
+  display: block;
+  z-index: -1;
+  -webkit-animation: sliderShape 5s linear infinite;
+}
+@keyframes sliderShape{
+  0%,100%{
+  border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+    transform: translate3d(0,0,0) rotateZ(0.01deg);
+  }
+  34%{
+      border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+    transform:  translate3d(0,5px,0) rotateZ(0.01deg);
+  }
+  50%{
+    transform: translate3d(0,0,0) rotateZ(0.01deg);
+  }
+  67%{
+    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60% ;
+    transform: translate3d(0,-3px,0) rotateZ(0.01deg);
+  }
+}
+
+
+ /*css de listaContactos*/
+ .lista-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.contactos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contacto-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+  width: 250px;
+  background-color: #fff;
+}
+
+.contacto-card .card-body {
+  margin-bottom: 10px;
+}
+
+.contacto-card .card-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .contacto-card {
+    width: 100%;
+  }
+}
+/*ccs de formularioContacto*/
+.formulario-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.campo-formulario {
+  margin-bottom: 15px;
+}
+
+.campo-formulario label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.campo-formulario input {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+}
+
+.mensaje-exito {
+  color: green;
+  font-size: 16px;
+  margin-top: 10px;
+}
+/*ccs de busqueda*/
+.busqueda-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.busqueda-container input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 80%;
+  max-width: 300px;
+}
+
+
+#arr{/*cambia el estilo de letra de lista de contactos*/
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#arregl{/*cambia el estilo de letra del formulario*/
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+#yoo{
+  font-family: 'Times New Roman', Times, serif;
+}
